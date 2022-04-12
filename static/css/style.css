@@ -1,3 +1,28 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,900&display=swap');
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 .col-md-5 img {
     width: 100%;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.list-style {
+    list-style: none;
+    color: #41bd5c;
+    background: rgb(29, 27, 27);
+    border: 5px solid #41bd5c;
+    padding: 25px;
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 15px;
 }
