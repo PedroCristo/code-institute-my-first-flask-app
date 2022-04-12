@@ -11,7 +11,10 @@ app.secret_key = os.environ.get("SECRET_KEY")
 
 @app.route("/")
 def index():
-    return render_template("index.html", page_title="Hello Flask")
+     post_data = []
+     with open("data/posts.json", "r") as json_data:
+          post_data = json.load(json_data)
+     return render_template("index.html", page_title="Hello Flask", posts=post_data)
 
 
 @app.route("/about")
