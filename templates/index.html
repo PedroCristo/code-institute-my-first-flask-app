@@ -8,7 +8,7 @@
             <div class="post-preview">
                 <a href="post.html">
                     <h2 class="post-title">
-                        {{ post.title }}
+                        {{ loop.index }}. {{ post.title }}
                     </h2>
                     <h3 class="post-subtitle">
                         {{ post.sub_title }}
@@ -20,12 +20,12 @@
             </div>
             <hr>
             {% endfor %}
-           
+        </div>
+            
             <!-- Pager -->
             <div class="clearfix">
                 <a class="btn btn-success float-right" href="#">Older Posts &rarr;</a>
             </div>
-        </div>
 
 
 {% endblock %}
